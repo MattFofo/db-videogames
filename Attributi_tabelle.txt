@@ -6,6 +6,7 @@ trama			text									videogame_id		FK1
 IVA				int										player_id			FK2
 città			varchar(30)								voto				tinyint
 nazione			varchar(30)
+PEGI			tinyint
 software_house	FK			
 
 
@@ -25,10 +26,6 @@ Table: Categories
 ID				PK
 nome			varchar(30)
 
-
-Table: Classifications
-ID				PK
-PEGI			tinyint
 
 
 Table: Content_Descriptors
