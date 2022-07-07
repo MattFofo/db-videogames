@@ -2,17 +2,17 @@ Table: Videogames										PIVOT TABLES
 
 ID				PK										Videogames_Players
 nome			varchar(50)								
-trama			text									videogame_id		PK1
-IVA				int										player_id			PK2
+trama			text									videogame_id		FK1
+IVA				int										player_id			FK2
 città			varchar(30)								voto				tinyint
 nazione			varchar(30)
 software_house	FK			
 
 
-Table: Software_Houses																	
-ID				PK
-IVA				int
-città			varchar(30)
+Table: Software_Houses									Players_Tournaments									
+ID				PK										player_id			FK1
+IVA				int										tournament_id		FK2
+città			varchar(30)								istritto			bool
 nazione			varchar(30)
 
 
