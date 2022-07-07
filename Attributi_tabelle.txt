@@ -1,0 +1,51 @@
+Table: Videogames
+
+ID				PK
+nome			varchar(50)
+trama			text
+IVA				int
+città			varchar(30)
+nazione			varchar(30)
+software_house	FK
+
+
+Table: Software_Houses
+ID				PK
+IVA				int
+città			varchar(30)
+nazione			varchar(30)
+
+
+Table: Platforms
+ID				PK
+nome			varchar(30)
+
+
+Table: Categories
+ID				PK
+nome			varchar(30)
+
+
+Table: Classifications
+ID				PK
+PEGI			smallint
+
+
+Table: Content_Descriptors
+ID				PK
+nome			varchar(30)
+
+
+Table: Players
+ID				PK
+nome			varchar(50)
+cognome			varchar(50)
+nikname			varchar()
+città			varchar(30)
+
+
+Table: Tournaments
+ID				PK
+nome			varchar(50)
+anno			smallint
+città			varchar(30)
