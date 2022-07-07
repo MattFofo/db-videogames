@@ -1,15 +1,15 @@
-Table: Videogames
+Table: Videogames										PIVOT TABLES
 
-ID				PK
-nome			varchar(50)
-trama			text
-IVA				int
-città			varchar(30)
+ID				PK										Videogames_Players
+nome			varchar(50)								
+trama			text									videogame_id		PK1
+IVA				int										player_id			PK2
+città			varchar(30)								voto				tinyint
 nazione			varchar(30)
-software_house	FK
+software_house	FK			
 
 
-Table: Software_Houses
+Table: Software_Houses																	
 ID				PK
 IVA				int
 città			varchar(30)
@@ -28,7 +28,7 @@ nome			varchar(30)
 
 Table: Classifications
 ID				PK
-PEGI			smallint
+PEGI			tinyint
 
 
 Table: Content_Descriptors
